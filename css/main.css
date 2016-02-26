@@ -760,22 +760,6 @@ ul.sub-menu {
   width: 100%;
 }
 
-
-
-.page-breadcrumb-header
-{
-  position: relative;
-  background-image: url(../images/home/tour-bg.png);
-  background-color: #fbfafa;
-  background-repeat: repeat-x;
-  height: 130px;
-  background-position: center;
-  display: table;
-  position: static;
-  width: 100%;
-  margin-bottom:20px;
-}
-
 #team {
   padding: 85px 0;
 }
