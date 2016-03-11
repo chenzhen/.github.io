@@ -494,14 +494,14 @@
 					var participator = result[i].Participator;
 					var participatorArray = null;
 					var participators = "";
-					if(participator.contains("陈真"))
+					if(participator.indexOf("陈真")<0)
 					{
-						participatorArray= participator.split("陈真");
-						participators= participatorArray[0]+'<span class="pub-me">陈真</span>'+participatorArray[1];
-					}else
-					{
+						//没有
 						participatorArray = participator.split("Zhen CHEN");
 						participators= participatorArray[0]+'<span class="pub-me">Zhen CHEN</span>'+participatorArray[1];
+					}else{
+						participatorArray= participator.split("陈真");
+						participators= participatorArray[0]+'<span class="pub-me">陈真</span>'+participatorArray[1];
 					}
 
 					var paper="";
@@ -532,14 +532,14 @@
 					var participator = result[i].Participator;
 					var participatorArray = null;
 					var participators = "";
-					if(participator.contains("陈真"))
+					if(participator.indexOf("陈真")<0)
 					{
-						participatorArray= participator.split("陈真");
-						participators= participatorArray[0]+'<span class="pub-me">陈真</span>'+participatorArray[1];
-					}else
-					{
+						//没有
 						participatorArray = participator.split("Zhen CHEN");
 						participators= participatorArray[0]+'<span class="pub-me">Zhen CHEN</span>'+participatorArray[1];
+					}else{
+						participatorArray= participator.split("陈真");
+						participators= participatorArray[0]+'<span class="pub-me">陈真</span>'+participatorArray[1];
 					}
 					var gdate = result[i].GainDate.split(" ");
 					var patent = '<li class="list-group-item">'+ (i+1) +'. '+participators+'. <a class="pub-title">'+result[i].Name+'</a>. '+result[i].Type+', SN:'+result[i].SerialNO+', '+gdate[0]+'.(<a href="javascript:void(0)">PDF</a>)</li>';
@@ -575,15 +575,24 @@
 					var participator = result[i].Participator;
 					var participatorArray = null;
 					var participators = "";
-					if(participator.contains("陈真"))
-					{
-						participatorArray= participator.split("陈真");
-						participators= participatorArray[0]+'<span class="pub-me">陈真</span>'+participatorArray[1];
-					}else
+					if(participator.indexOf("陈真")<0)
 					{
 						participatorArray = participator.split("Zhen CHEN");
 						participators= participatorArray[0]+'<span class="pub-me">Zhen CHEN</span>'+participatorArray[1];
+					}else{
+						participatorArray= participator.split("陈真");
+						participators= participatorArray[0]+'<span class="pub-me">陈真</span>'+participatorArray[1];
 					}
+					//IE不支持contains
+//					if(participator.contains("陈真"))
+//					{
+//						participatorArray= participator.split("陈真");
+//						participators= participatorArray[0]+'<span class="pub-me">陈真</span>'+participatorArray[1];
+//					}else
+//					{
+//						participatorArray = participator.split("Zhen CHEN");
+//						participators= participatorArray[0]+'<span class="pub-me">Zhen CHEN</span>'+participatorArray[1];
+//					}
 					var project ="";
 					if(result[i].Type=="B/S")
 					{

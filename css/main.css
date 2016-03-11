@@ -251,9 +251,10 @@
 }
 
 #header .navbar {
-  background: #fff;
+  /*background: #e6e2d9;*/
   border: 0;
   margin-bottom: 0;
+  background-color: rgba(230, 226, 217, 0.9);
 }
 
 #header .navbar-toggle{
