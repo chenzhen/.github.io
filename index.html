@@ -29,7 +29,7 @@ description: 欢迎来到我的个人主页.
       {% when '03' or '23' %}{{ %d }}<!--rd-->
       {% else %}{{ %d }}<!--th-->
       {% endcase %},
-      {{ post.date | date: "%Y" }}</small><a  href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      {{ post.date | date: "%Y" }}<a  href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></small>
       </li>
       {% endfor %}
     </ul>
