@@ -26,7 +26,7 @@
 	<!-- Section: intro -->
     <section id="intro" class="intro">
 		<div class="slogan">
-			<a href="index.html"><img src="img/me.png" alt="" class="img-circle" width="144" height="150" /></a>
+			<a href="index.html"><img src="../img/me.png" alt="" class="img-circle" width="144" height="150" /></a>
 		</div>
 		<div class="page-scroll">
 			<a href="#about">
@@ -56,8 +56,8 @@
                                 <li><a href="/blog/">最新博文</a></li>
                                 <li><a href="#Reserach">科学研究</a></li>
                                 <li><a href="#Publications">发表论文</a></li>
-																<li><a href="#Projects">工程实践</a></li>
-																<li><a href="#Resources">推荐资源</a></li>
+								<li><a href="#Projects">工程实践</a></li>
+								<li><a href="#Resources">推荐资源</a></li>
                                 <li><a href="#gallery">照片欣赏</a></li>
                             </ul>
                         </div>
@@ -70,19 +70,18 @@
     </div> 
     <!-- /Navigation -->  
 	
-	
-	
+
 	{{ content }}
 	
 	<footer>
 		<div class="container">
 			<div>
 				<div class="col-lg-2">
-					<img  src="img/URL_QR.png"  width="100" height="100"/>
+					<img  src="../img/URL_QR.png"  width="100" height="100"/>
 					<p class="" style="height: 26px;">网站二维码</p>
 				</div>
 				<div class="col-lg-2">
-					<img  src="img/Wechat_QR.jpg"  width="100" height="100"/>
+					<img  src="../img/Wechat_QR.jpg"  width="100" height="100"/>
 					<p class="" style="height: 26px;">微信二维码</p>
 				</div>
 			</div>
@@ -95,139 +94,17 @@
 	</footer>
 
     <!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>	
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/nivo-lightbox.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>	
+	<script src="../js/jquery.sticky.js"></script>
+	<script src="../js/jquery.scrollTo.js"></script>
+	<script src="../js/stellar.js"></script>
+	<script src="../js/wow.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/nivo-lightbox.min.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
-	<script type="text/javascript">
-    	$(document).ready(function () {
-    		
-    		//update paper list
-    		$.getJSON("data/JsonPaper.json",function(result){
-    			var papers = "";
-				for (i = 0, len = result.length; i < len; i++) {
-					var participator = result[i].Participator;
-					var participatorArray = null;
-					var participators = "";
-					if(participator.indexOf("陈真")<0)
-					{
-						//没有
-						participatorArray = participator.split("Zhen CHEN");
-						participators= participatorArray[0]+'<span class="pub-me">Zhen CHEN</span>'+participatorArray[1];
-					}else{
-						participatorArray= participator.split("陈真");
-						participators= participatorArray[0]+'<span class="pub-me">陈真</span>'+participatorArray[1];
-					}
-
-					var paper="";
-					if(result[i].JorC=="J"&&result[i].Status=="Published")
-					{
-						paper = '<li class="list-group-item">'+ (i+1) +'. '+participators+'. <a class="pub-title">'+result[i].Name+'</a>. '+result[i].JCName+'(<a target="_blank" href="'+result[i].JCSite+'">'+result[i].JCAbb+'</a>), Vol '+result[i].Vol+', No '+result[i].No+', pp '+result[i].PageNO+', '+result[i].PublishYear+'.(<a target="_blank" href="'+result[i].PDF+'">PDF</a>)</li>';
-					}else if(result[i].JorC=="J"&&result[i].Status=="Accepted")
-					{
-						paper = '<li class="list-group-item">'+ (i+1) +'. '+participators+'. <a class="pub-title">'+result[i].Name+'</a>. '+result[i].JCName+'(<a target="_blank" href="'+result[i].JCSite+'">'+result[i].JCAbb+'</a>), Accepted, '+result[i].PublishYear+'.(<a target="_blank" href="'+result[i].PDF+'">To Appear</a>)</li>';
-					}
-					else if(result[i].JorC=="C"&&result[i].Status=="Published")
-					{
-						paper = '<li class="list-group-item">'+ (i+1) +'. '+participators+'. <a class="pub-title">'+result[i].Name+'</a>. '+result[i].JCName+'(<a target="_blank" href="'+result[i].JCSite+'">'+result[i].JCAbb+'</a>), pp '+result[i].PageNO+', '+result[i].PublishYear+'.(<a target="_blank" href="'+result[i].PDF+'">PDF</a>)</li>';
-					}
-					else if(result[i].JorC=="C"&&result[i].Status=="Accepted")
-					{
-						paper = '<li class="list-group-item">'+ (i+1) +'. '+participators+'. <a class="pub-title">'+result[i].Name+'</a>. '+result[i].JCName+'(<a target="_blank" href="'+result[i].JCSite+'">'+result[i].JCAbb+'</a>), Accepted, '+result[i].PublishYear+'.(<a target="_blank" href="'+result[i].PDF+'">To Appear</a>)</li>';
-					}
-					papers+=paper;			
-				}
-				$("#listPaper").html(papers);
-	        });//end getJSON
-	        
-	        //update patent list
-    		$.getJSON("data/JsonPatent.json",function(result){
-    			var patents = "";
-				for (i = 0, len = result.length; i < len; i++) {
-					var participator = result[i].Participator;
-					var participatorArray = null;
-					var participators = "";
-					if(participator.indexOf("陈真")<0)
-					{
-						//没有
-						participatorArray = participator.split("Zhen CHEN");
-						participators= participatorArray[0]+'<span class="pub-me">Zhen CHEN</span>'+participatorArray[1];
-					}else{
-						participatorArray= participator.split("陈真");
-						participators= participatorArray[0]+'<span class="pub-me">陈真</span>'+participatorArray[1];
-					}
-					var gdate = result[i].GainDate.split(" ");
-					var patent = '<li class="list-group-item">'+ (i+1) +'. '+participators+'. <a class="pub-title">'+result[i].Name+'</a>. '+result[i].Type+', SN:'+result[i].SerialNO+', '+gdate[0]+'.(<a href="javascript:void(0)">PDF</a>)</li>';
-					patents+=patent;			
-				}
-				$("#listPatent").html(patents);
-	        });//end getJSON
-	        
-	        //update Thesis list
-    		$.getJSON("data/JsonThesis.json",function(result){
-    			var thesises = "";
-				for (i = 0, len = result.length; i < len; i++) {
-					var thesis = '<li class="list-group-item">'+(i+1)+'. <span class="pub-me"> 陈真</span>. <a class="pub-title">'+result[i].Name+'</a>. '+result[i].Type+', '+result[i].Year+'.(<a href="javascript:void(0)">PDF</a>)</li>';	
-					thesises+=thesis;
-				}
-				$("#listThesis").html(thesises);
-	        }); 
-	        
-	        //update MeetingAttendance list 
-    		$.getJSON("data/JsonMeetingAttendance.json",function(result){
-    			var meetingAttendances = "";
-				for (i = 0, len = result.length; i < len; i++) {
-					var meetingAttendance = '<li class="list-group-item">'+(i+1)+'. <a class="pub-title">'+result[i].MeetingName+'</a>,'+result[i].Address+', '+result[i].Data+'.(<a target="_blank" href="'+result[i].MeetingLink+'">'+result[i].MeetingAbb+'</a>)</li>';	
-					meetingAttendances+=meetingAttendance;
-				}
-				$("#listMeetingAttendance").html(meetingAttendances);
-	        }); 
-	        
-	        //update Project list 
-    		$.getJSON("data/JsonProject.json",function(result){
-    			var projects = "";
-				for (i = 0, len = result.length; i < len; i++) {
-					var participator = result[i].Participator;
-					var participatorArray = null;
-					var participators = "";
-					if(participator.indexOf("陈真")<0)
-					{
-						participatorArray = participator.split("Zhen CHEN");
-						participators= participatorArray[0]+'<span class="pub-me">Zhen CHEN</span>'+participatorArray[1];
-					}else{
-						participatorArray= participator.split("陈真");
-						participators= participatorArray[0]+'<span class="pub-me">陈真</span>'+participatorArray[1];
-					}
-					//IE不支持contains
-					var project ="";
-					if(result[i].Type=="B/S")
-					{
-						if(result[i].WebSite=="局域网")
-						{
-							project = '<li class="list-group-item">'+(i+1)+'. '+participators+'. '+result[i].Name+', '+result[i].Date+', '+result[i].Type+', 局域网.</li>';
-						}else
-						{
-							project = '<li class="list-group-item">'+(i+1)+'. '+participators+'. '+result[i].Name+', '+result[i].Date+', '+result[i].Type+',<a target="_blank" href="'+result[i].WebSite+'" >访问</a>.</li>';
-						}
-						
-					}else{
-						project = '<li class="list-group-item">'+(i+1)+'. '+participators+'. '+result[i].Name+', '+result[i].Date+', '+result[i].Type+'.</li>';
-					}
-					
-					projects+=project;
-				}
-				$("#listProject").html(projects);
-	        }); 
-	        
-	         
-    	});
+    <script src="../js/custom.js"></script>
     </script>
 </body>
 
