@@ -460,7 +460,7 @@ img[alt=drawing] { width: 60%; }
 }
 
 .post-link-in-posts .article {
-    font-weight: 800;
+    font-weight: 0;
     color: #555;
     margin-right: 3px;
     transition: all 100ms linear;
