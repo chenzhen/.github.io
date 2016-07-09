@@ -37,10 +37,7 @@ article h1 {
   text-align: center !important;
 }
 
-p{
-  text-align: justify;
-  margin: 20px 0;
-}
+
 
 .post ul, .post ol ,p{
   /*padding-left: 2.5em;*/
