@@ -18,7 +18,7 @@ Face detection, 对图像中的人脸进行检测，并将结果用矩形框框�
 
 Face alignment，对检测到的人脸进行姿态的校正，使其人脸尽可能的"正"，通过校正可以提高人脸识别的精度。校正的方法有2D校正、3D校正的方法，3D校正的方法可以使侧脸得到较好的识别。目前校正在处理过程中完全可以达到实时性的要求，具体可以阅读Face Alignment at 3000 FPS via Regressing Local Binary Features这篇文章（[论文笔记](http://blog.csdn.net/boosting1/article/details/26085223)）。在进行人脸校正的时候，会有检测特征点的位置这一步，这些特征点位置主要是诸如鼻子左侧，鼻孔下侧，瞳孔位置，上嘴唇下侧等等位置，知道了这些特征点的位置后，做一下位置驱动的变形，脸即可被校"正"了。下面两幅图像分别显示了原来的人脸和经过校正后了的人脸。
 
-![drawing](http://i300.photobucket.com/albums/nn17/willard-yuan/blog/f3_zpswxvtrty0.jpg)
+
 ![drawing](http://i300.photobucket.com/albums/nn17/willard-yuan/blog/Face_zpsxvrwiwan.jpg)
 
 ### 人脸校验
