@@ -567,11 +567,11 @@ img[alt=drawing] { width: 60%; }
     white-space: pre-wrap; /*防止一行太长*/
 }
 .post pre{
-    font-size:.8rem;  /*设置代码字体大小*/
+    font-size:1.4rem; /*设置代码字体大小*/
     font-family: Consolas,"Liberation Mono",Courier,monospace;/*设置代码字体类型*/
 }
 .post pre code{
-    font-size:.8rem;  /*设置代码字体大小*/
+    font-size:1.4rem;  /*设置代码字体大小*/
     font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
     border: none;
     line-height: 170%;
