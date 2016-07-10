@@ -56,7 +56,7 @@ h2 {
 }
 
 h2:before {
-    content: "#";
+   /* content: "#";*/
     color: #48C9B0;
     display: inline-block;
     float: left;
