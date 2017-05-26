@@ -1,1 +1,86 @@
-[{"ID":"12","Name":"集客专线APP——中国移动阳泉分公司","Participator":"陈真","Date":"2015.11-2015.12","Type":"APP","WebSite":"","Yifang":"","Introduction":"","KeyWord":"","Photo":""},{"ID":"4","Name":"秦皇岛市人民政府规范性文件备案审查系统","Participator":"陈真","Date":"2014.10-2015-01","Type":"C/S","WebSite":"","Yifang":"","Introduction":"","KeyWord":"","Photo":""},{"ID":"5","Name":"长安福特主品牌 我的路进无止境 内部员工评选系统","Participator":"陈真","Date":"2014.09-2015-01","Type":"B/S","WebSite":"局域网","Yifang":"","Introduction":"","KeyWord":"","Photo":""},{"ID":"11","Name":"河北骄阳丝网设备有限责任公司官网","Participator":"陈真","Date":"2014.09-2015-01","Type":"B/S","WebSite":"http://www.jiaoyang.net/Index.aspx","Yifang":"","Introduction":"","KeyWord":"","Photo":""},{"ID":"9","Name":"秦皇岛优格玛工业技术有限公司企业管理系统","Participator":"陈真,申利民,许建生,杨益良","Date":"2014.07-2015-01","Type":"B/S","WebSite":"http://121.22.108.230:8010/urocma","Yifang":"","Introduction":"","KeyWord":"","Photo":""},{"ID":"10","Name":"站物流转运管理系统","Participator":"陈真,申利民,许建生,杨益良","Date":"2014.03-2015-01","Type":"B/S","WebSite":"http://www.parisezhan.com","Yifang":"","Introduction":"","KeyWord":"","Photo":""},{"ID":"8","Name":"秦皇岛开发区检察院信息发布、控制和管理系统","Participator":"陈真,申利民","Date":"2014.03-2014.07","Type":"B/S","WebSite":"局域网","Yifang":"","Introduction":"","KeyWord":"","Photo":""},{"ID":"7","Name":"秦皇岛开发区公共资源交易系统","Participator":"陈真,申利民","Date":"2014.02-2014.07","Type":"B/S","WebSite":"http://ggzy.qetdz.com","Yifang":"","Introduction":"","KeyWord":"","Photo":""},{"ID":"3","Name":"×××请销假管理系统","Participator":"陈真","Date":"2013.10-2014-01","Type":"C/S","WebSite":"","Yifang":"","Introduction":"","KeyWord":"","Photo":""},{"ID":"6","Name":"秦皇岛开发区第二中学官网","Participator":"陈真,申利民","Date":"2013.09-2013-12","Type":"B/S","WebSite":"www.qhdkfqez.com","Yifang":"","Introduction":"","KeyWord":"","Photo":""},{"ID":"2","Name":"燕山大学资产导航系统","Participator":"陈真,佟连刚,王磊","Date":"2010,09-2011,10","Type":"B/S","WebSite":"http://211.81.241.59:8086/gzc/login.aspx","Yifang":"","Introduction":"","KeyWord":"","Photo":""},{"ID":"1","Name":"数据结构算法学习系统V1.0","Participator":"陈真,张忠平","Date":"2009.12- 2010.07","Type":"单机","WebSite":"","Yifang":"","Introduction":"","KeyWord":"","Photo":""}]
+﻿[
+  {
+    "ID": "6",
+    "Name": "秦皇岛优格玛工业技术有限公司企业管理系统",
+    "Participator": "陈真,许建生,杨益良",
+    "Date": "2014.07-2015-01",
+    "Type": "B/S",
+    "WebSite": "http://121.22.108.230:8010/urocma",
+    "Yifang": "",
+    "Introduction": "",
+    "KeyWord": "",
+    "Photo": ""
+  },
+  {
+    "ID": "5",
+    "Name": "巴黎E站物流转运管理系统",
+    "Participator": "陈真,许建生,杨益良",
+    "Date": "2014.03-2015-01",
+    "Type": "B/S",
+    "WebSite": "http://www.parisezhan.com",
+    "Yifang": "",
+    "Introduction": "",
+    "KeyWord": "",
+    "Photo": ""
+  },
+  {
+    "ID": "4",
+    "Name": "秦皇岛开发区检察院信息发布、控制和管理系统",
+    "Participator": "陈真",
+    "Date": "2014.03-2014.07",
+    "Type": "B/S",
+    "WebSite": "局域网",
+    "Yifang": "",
+    "Introduction": "",
+    "KeyWord": "",
+    "Photo": ""
+  },
+  {
+    "ID": "3",
+    "Name": "秦皇岛开发区公共资源交易系统",
+    "Participator": "陈真",
+    "Date": "2014.02-2014.07",
+    "Type": "B/S",
+    "WebSite": "http://ggzy.qetdz.com",
+    "Yifang": "",
+    "Introduction": "",
+    "KeyWord": "",
+    "Photo": ""
+  },
+  {
+    "ID": "2",
+    "Name": "秦皇岛开发区第二中学官网",
+    "Participator": "陈真,申利民",
+    "Date": "2013.09-2013-12",
+    "Type": "B/S",
+    "WebSite": "www.qhdkfqez.com",
+    "Yifang": "",
+    "Introduction": "",
+    "KeyWord": "",
+    "Photo": ""
+  },
+  {
+    "ID": "1",
+    "Name": "燕山大学资产导航系统",
+    "Participator": "陈真,佟连刚,王磊",
+    "Date": "2010,09-2011,10",
+    "Type": "B/S",
+    "WebSite": "http://211.81.241.59:8086/gzc/login.aspx",
+    "Yifang": "",
+    "Introduction": "",
+    "KeyWord": "",
+    "Photo": ""
+  },
+  {
+    "ID": "0",
+    "Name": "数据结构算法学习系统V1.0",
+    "Participator": "陈真,张忠平",
+    "Date": "2009.12- 2010.07",
+    "Type": "单机",
+    "WebSite": "",
+    "Yifang": "",
+    "Introduction": "",
+    "KeyWord": "",
+    "Photo": ""
+  }
+]
